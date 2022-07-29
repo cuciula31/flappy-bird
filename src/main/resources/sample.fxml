@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+<Pane xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="application.Controller"
+      prefHeight="600.0" prefWidth="400.0"
+
+      fx:id="mainPane" onMouseReleased="#birdAction">
+    <children>
+        <Pane prefHeight="600" prefWidth="400" fx:id="backgroundPane" style="-fx-background-color: #00e4e7;">
+            <children>
+                <FlowPane prefHeight="100" prefWidth="400" alignment="CENTER">
+                    <Text fx:id="scoreText" style="-fx-font-size: 50; -fx-font-family: Impact; -fx-fill: black" opacity="0.7"></Text>
+                </FlowPane>
+                <Pane fx:id="earth" prefWidth="400" prefHeight="50" layoutY="550" opacity="1" style="-fx-background-color: #4b2601"></Pane>
+            </children>
+        </Pane>
+        <Pane prefHeight="600" prefWidth="400" fx:id="gamePane"> </Pane>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fx:id="bird"  fill="red" layoutX="75.0" layoutY="150.0" stroke="black" strokeType="INSIDE" height="50.0" width="50.0"/>
+    </children>
+</Pane>
